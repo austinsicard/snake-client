@@ -31,6 +31,15 @@ const handleUserInput = (key) => {
   if (key === 'd') { 
     connection.write('Move: right');
   }
+  if (key === 'z') {
+    setTimeout(() => connection.write("Say: zZz"), 1000); //Sends message after 1 second has passed
+  }
+  if (key === 'f') {
+    connection.write('Say: <><');
+  }
+  if (key === 'l') {
+    connection.write('Say" L0L');
+  }
 };
 
 module.exports = { setupInput }
