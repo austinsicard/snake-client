@@ -19,16 +19,16 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write("Name: A10");
-    // conn.write("Move: up");
-    // setInterval(() => conn.write('Move: up'), 100);
-// setTimeout(() => conn.write('Move: up'), 1000);
-// setTimeout(() => conn.write('Move: right'), 1050);
-// setTimeout(() => conn.write('Move: up'), 1100);
-// setTimeout(() => conn.write('Move: right'), 1150);
   });
-
-
+  
+  
   return conn;
 }
 
 module.exports = { connect };
+// conn.write("Move: up");
+// setInterval(() => conn.write('Move: up'), 100);
+// setTimeout(() => conn.write('Move: up'), 1000);
+// setTimeout(() => conn.write('Move: right'), 1050);
+// setTimeout(() => conn.write('Move: up'), 1100);
+// setTimeout(() => conn.write('Move: right'), 1150);
